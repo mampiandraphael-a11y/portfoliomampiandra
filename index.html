@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio/Mampiandra</title>
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bouton retour en haut -->
+    <button id="scroll-top" class="scroll-top" aria-label="Retour en haut">
+       <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- En-tête avec effet glassmorphique -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">M<span>ampiandra</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="#a-propos" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="#parcours" class="nav-link">Parcours</a></li>
+                <li class="nav-item"><a href="#loisirs" class="nav-link">Loisirs</a></li>
+                <li class="nav-item"><a href="#projets" class="nav-link">Projets</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                
+            </ul>
+            <div class="btn-menu" id="btn-menu" aria-label="Menu de navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    </header>
+
+        <!-- Ajout des liens CSS et JS nécessaires -->
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    <!-- Section Accueil (Hero) -->
+    <section id="accueil" class="hero">
+        <div class="hero-position">
+            <div class="about-image" data-aos="fade-left">
+                <img src="image/mampiandra.png" alt="Mampiandra">
+            </div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Mampiandra </h1>
+            <p class="subtitle">Développeur Full Stack  <span class="gradient-text">passionné en développement d'application Web et mobile.</span></p>
+            <p>Je suis étudiant en Informatique à l'EMIT Fianarantsoa.</p>
+            <a href="#a-propos" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+            
+        </div>
+    </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title">À propos de moi</h2>
+                    <p>Je m'appelle MAMPIANDRANIARIVO Fitiavanjanahary Phaël. Je suis étudiant en première année de Licence en Informatique à l'Ecole de Management et de l'Innovation Technologique à Fianarantsoa.</p>
+                    <p>Je me spécialise dans le développement d'application Web et maobile;et aussi je développe mes compétences en programmation, notamment en HTML, CSS, JavaScript et en gestion de versions avec Git & GitHub.</p>
+                         <p>
+                        <strong>Mon objectif :</strong>  est de devenir un développeur capable de résoudre des problèmes complexes et de maîtriser la programmation.</p>
+                    <a href="#contact" class="btn btn-outline">Discutons <i class="fas fa-comment"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Parcours (timeline) -->
+    <section id="parcours" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Parcours</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - présent</div>
+                    <div class="timeline-content">
+                        <h3>L1 Informatique</h3>
+                        <p><strong>EMIT Fianarantsoa</strong></p>
+                        <p>Apprentissage des bases en programmation, Algorithmique, HTML, CSS, JavaScript et Python.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat Scientifique</h3>
+                        <p><strong>Formation secondaire</strong></p>
+                        <p>Obtention du Baccalauréat scientifique avec une passion pour l'informatique et la technologie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Loisirs -->
+    <section id="loisirs" class="hobbies">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Loisirs</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-code"></i>
+                    <h3>Développement</h3>
+                    <p>Créer des mini-projets et explorer de nouvelles technologies.</p>
+                </div>
+                <div class="hobby-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Jeux Vidéos</h3>
+                    <p>Améliorer ma logique et prise de décision.</p>
+                </div>
+                <div class="hobby-card" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-basketball"></i>
+                    
+                    <h3>Basket-Ball</h3>
+                    <p>Développer l'esprit d'équipe et la discipline.</p>
+                </div>
+                <div class="hobby-card" data-aos="flip-left" data-aos-delay="400">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Apprentissage</h3>
+                    <p>Continu et passion pour les nouvelles technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Projets (avec filtres) -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projets récents</h2>
+            <div class="filter-buttons" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="frontend">Front-end</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card" data-category="fullstack" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="card-inner">
+                        <img src="image/mampiandra.png" alt="Portfolio Personnel">
+                        <div class="card-content">
+                            <h3>Portfolio Personnel</h3>
+                            <p>Site Web moderne présentant mon parcours, mes compétences et mes loisirs.</p>
+                            <div class="tech-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Démo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="project-card" data-category="frontend" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="card-inner">
+                        <img src="image/mampiandra.png" alt="Site Touristique">
+                        <div class="card-content">
+                            <h3>Projet en groupe - Site Touristique</h3>
+                            <p>Site Web présentant des lieux touristiques que les personnes peuvent visiter dans une ville.</p>
+                            <div class="tech-tags">
+                                <span>HTML</span><span>CSS</span><span>Git & GitHub</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://hasina06boy-collab.github.io/touristique-site/" target="_blank"><i class="fab fa-github"></i> Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 3 -->
+                <div class="project-card" data-category="fullstack" data-aos="zoom-in-up" data-aos-delay="400">
+                    <div class="card-inner">
+                        <img src="image/mampiandra.png" alt="Calculatrice">
+                        <div class="card-content">
+                            <h3>Mini-projet - Calculatrice</h3>
+                            <p>Calculatrice pour accroître mes compétences en programmation JavaScript.</p>
+                            <div class="tech-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Démo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contactez-moi</h2>
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="contact-info">
+                    <p><a href="mailto:mampiandraphael@gmail.com" target="_blank"><i class="fas fa-envelope" target="_blank"> </i>mampiandraphael@gmail.com</a></p>
+                    <p><a href="tel:+261382038807" target="_blank"><i class="fas fa-phone-alt"></i>0382038807</a></p>
+                    <div class="social-links">
+                        <a href="https://github.com/mampiandraphael-a11y" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/phaël-mampiandra-b225583b2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/261333133118" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MAMPIANDRANIARIVO Fitiavanjanahary Phaël. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
